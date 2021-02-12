@@ -17,40 +17,19 @@
 | Memcached            | IP:PORT    | A memcached distributed denial-of-service (DDoS) attack is a type of cyber attack in which an attacker attempts to overload a targeted victim with internet traffic. The attacker spoofs requests to a vulnerable UDP memcached* server, which then floods a targeted victim with internet traffic, potentially overwhelming the victim’s resources. While the target’s internet infrastructure is overloaded, new requests cannot be processed and regular traffic is unable to access the internet resource, resulting in denial-of-service. |
 
 ### Installation:
-* Windows:
-  * Download Python 3 from here
-  * Launch installer, click add python to PATH
-  * Download PyDDoS
-  * Open cmd or powershell in PyDDoS directory
-  * Run this command: sudo pip install scapy
-  * Run this command: pip install -r requirements.txt
-  * And this: python pyddos.py --help
-  
-* Linux:
-  * sudo apt update
-  * sudo apt install python3 python3-pip git -y
-  * git clone https://github.com/Anonymouz-cmd/PyDDoS.git
-  * cd PyDDoS/
-  * sudo pip install scapy
-  * pip3 install -r requirements.txt
-  * python3 pyddos.py --help
+```
+git clone https://github.com/CyberCommands/PyDDoS.git
+```
+```
+cd PyDDoS/
+```
+```
+sudo pip install scapy
+```
+```
+python3 pyddos.py --help
+```
 
-* Termux:
-  * pkg update
-  * pkg install python3 python3-pip git -y
-  * git clone https://github.com/Anonymouz-cmd/PyDDoS.git
-  * cd PyDDoS/
-  * sudo pip install scapy
-  * pip3 install -r requirements.txt
-  * python3 pyddos.py --help
-
-* Mac OS X
-  * git clone https://github.com/Anonymouz-cmd/PyDDoS.git
-  * cd PyDDoS/
-  * sudo pip install scapy
-  * pip install -r requirements.txt
-  * python3 pyddos.py --help
- 
 ### USAGE:
 ```
 usage: pyddos.py [-h] [--target <IP:PORT, URL, PHONE>]

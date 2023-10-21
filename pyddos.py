@@ -12,7 +12,7 @@ try:
     import tools.addons.winpcap
     from tools.method import AttackMethod
 except ImportError as err:
-    CriticalError("Failed import some modules", err)
+    CriticalError(j"Failed import some modules", err)
     sys.exit(1)
 
 parser = argparse.ArgumentParser(description="Distributed Denial-of-Service Attack ToolKit")
